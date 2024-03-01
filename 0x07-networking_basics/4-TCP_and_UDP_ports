@@ -1,0 +1,5 @@
+#!usr/bin/env bash
+#display listing ports with listing socket
+#and PID, name of the program to which socket
+#blongs
+netstat -lp
