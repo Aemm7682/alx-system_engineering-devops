@@ -1,5 +1,9 @@
-#!usr/bin/env bash
-#display listing ports with listing socket
-#and PID, name of the program to which socket
-#blongs
-netstat -lp
+#!/usr/bin/env bash
+
+# Display listening ports
+echo "Listening ports:"
+netstat -ltnp
+
+# Display the PID and name of the program to which each socket belongs
+echo "PID and program name:"
+netstat -tulpn
