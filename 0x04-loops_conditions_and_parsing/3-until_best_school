@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #a Bash script that displays Best School 10 times with until
 
-i=1
-until [ $i -lt 10 ]
+i=10
+until [ $i -lt 1 ]
 do
 	echo "Best School"
-	i=$((i+1))
+	i=$((i-1))
 done
