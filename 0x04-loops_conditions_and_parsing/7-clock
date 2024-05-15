@@ -10,12 +10,12 @@ do
 	while [ $j -le 59 ]
 	do
 		if [[ $j -eq 1 && $i -eq 0 ]];then
-			echo "Hour:" $i
+			echo "Hour:"$i
 			echo "$j"
 		elif [ $j -eq 59 ];then
 			echo "$j"
 			i=$((i+1))
-			echo "Hour:" $i
+			echo "Hour:"$i
 		else
 			echo "$j"
 		fi
