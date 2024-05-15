@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+i=0
+j=1
+while [ $i -lt 12 ]
+do
+	while [ $j -le 59 ]
+	do
+		if [[ $j -eq 1 && $i -eq 0 ]];then
+			echo "Hour :" $i
+		elif [ $j -eq 59 ];then
+			echo "$j"
+			i=$((i+1))
+			echo "Hour :" $i
+		else
+			echo "$j"
+		fi
+		j=$((j+1))
+	done
+	j=1
+done
+
