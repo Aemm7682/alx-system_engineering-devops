@@ -3,9 +3,9 @@
 #while and for 
 
 i=1
-while [ $i -le 10 ]
+while [ $i -le 11 ]
 do
-	if [ $i -eq 9 ];then
+	if [ $i -eq 10 ];then
 		echo "Hi"
 	else
 		echo "Best School"
