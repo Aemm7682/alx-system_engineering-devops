@@ -29,4 +29,5 @@ if __name__ == "__main__":
 
         for i in data:
             if i.get("userId") == int(argv[1]):
-                csv_file.writerow([i.get("userId"), employee, i.get("completed"), i.get("title")])
+                csv_file.writerow([i.get("userId"), employee,
+                                   i.get("completed"), i.get("title")])
