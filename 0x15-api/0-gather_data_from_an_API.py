@@ -28,7 +28,8 @@ if __name__ == "__main__":
                 comp_job += 1
                 task.append(i.get('title'))
 
-    output = "Employee {} is done with tasks({}/{}):".format(employee, comp_job, total)
+    output = "Employee {} is done with tasks({}/{}):".format(
+        employee, comp_job, total)
     print(output)
 
     for i in task:
