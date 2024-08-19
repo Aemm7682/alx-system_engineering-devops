@@ -28,8 +28,15 @@ if __name__ == "__main__":
                 comp_job += 1
                 task.append(i.get('title'))
 
+    # Ensure the output format matches exactly
     output = "Employee {} is done with tasks({}/{}):".format(employee, comp_job, total)
     print(output)
+
+    # Debugging: Print the expected output
+    with open('student_output', 'r') as f:
+        expected_output = f.readline().strip()
+    print("Expected output:", expected_output)
+    print("Actual output:", output)
 
     for i in task:
         print("\t {}".format(i))

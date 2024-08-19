@@ -34,9 +34,11 @@ def first_line_formatting(id):
     with open(filename, 'r') as f:
         first = f.readline().strip()
 
-    print(first)
-
     output = "Employee {} is done with tasks({}/{}):".format(name, todos_done, todos_count)
+
+    # Debugging: Print the expected and actual outputs
+    print("Expected output:", output)
+    print("Actual output from file:", first)
 
     if first == output:
         print("First line formatting: OK")
